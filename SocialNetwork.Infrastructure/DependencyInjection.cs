@@ -14,7 +14,7 @@ public static class DependencyInjection
     {
         Task.Run(async () =>
             {
-                await DB.InitAsync("SocialNetwork", MongoClientSettings.FromConnectionString("mongodb+srv://vukasin:mkjzv13102001@clusterforbot.yfbg85z.mongodb.net/?retryWrites=true&w=majority&appName=Clusterforbot"));
+                await DB.InitAsync("SocialNetwork", MongoClientSettings.FromConnectionString("your-mongodb-connection-string"));
             })
             .GetAwaiter()
             .GetResult();
